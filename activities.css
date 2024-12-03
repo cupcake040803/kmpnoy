@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+body{
+    background: #555856
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 0 19%;
+}
+
+
+/* Shop Container */
+.shop-container {
+    margin-top: 100px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    
+    border-radius: 10px;
+    
+    text-align: center;
+}
+
+/* Product Label */
+.product-label {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-left:250px;
+    text-transform: uppercase;
+}
+
+/* Product Card */
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: -0.5px;
+    margin-right: 500px;
+    padding: 20px;
+    
+    border-radius: 10px;
+    
+}
+
+/* Product Image Container */
+.product-image-container {
+    flex: 1;
+    padding-right: 10px; /* Space between image and text */
+}
+
+.product-image {
+    width: 100%;
+    max-width: 100px; /* Ensure image does not exceed a max width */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Product Info */
+.product-info {
+    flex: 1;
+    text-align: left; /* Align text to the left for product name and price */
+    margin-left: 0.5px;
+}
+
+/* Product Name */
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1px 1;
+    color: white;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2%;
+    }
+    
+    .scroll-down{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
